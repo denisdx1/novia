@@ -427,6 +427,7 @@ body {
     backdrop-filter: blur(10px);
     visibility: hidden;
     display: none;
+    overflow: hidden;
 }
 
 .letter-content::before {
@@ -459,11 +460,12 @@ body {
     opacity: 1;
     visibility: visible;
     display: block;
+    overflow: auto;
 }
 
 .letter-paper {
     padding: 40px 50px;
-    height: 100%;
+    height: calc(100% - 80px);
     background: linear-gradient(135deg, #fff 0%, #fefefe 50%, #f8f9fa 100%);
     border-radius: 15px;
     position: relative;
